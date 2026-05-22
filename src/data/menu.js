@@ -291,11 +291,10 @@ export const MENU_CATEGORIES = VEG_CATEGORIES;
 // ─────────────────────────────────────────────────────────────────
 export const WEDDING_PACKAGES = [
   {
-    tier:    'Silver',
-    label:   'Silver Package',
+    tier: 'Silver',
+    label: 'Silver Package',
     tagline: 'Elegant & Essential',
-    img:     '/img2.jpg',
-    pricing: 'From ₹350 / plate',
+    img: '/img2.jpg',
     description:
       'A graceful celebration package perfect for engagements, receptions and intimate ceremonies.',
     features: [
@@ -308,13 +307,13 @@ export const WEDDING_PACKAGES = [
       'Up to 200 guests',
     ],
   },
+
   {
-    tier:     'Gold',
-    label:    'Gold Package',
-    tagline:  'Royal & Refined',
-    img:      '/img7.jpg',
-    pricing:  'From ₹650 / plate',
-    popular:  true,
+    tier: 'Gold',
+    label: 'Gold Package',
+    tagline: 'Royal & Refined',
+    img: '/img7.jpg',
+    popular: true,
     description:
       'Our most loved package for grand weddings — multi-cuisine menus with premium buffet décor and live theatre.',
     features: [
@@ -328,12 +327,12 @@ export const WEDDING_PACKAGES = [
       'Up to 600 guests',
     ],
   },
+
   {
-    tier:     'Royal',
-    label:    'Royal Wedding Package',
-    tagline:  'Grand & Luxurious',
-    img:      '/img4.jpg',
-    pricing:  'From ₹1,250 / plate',
+    tier: 'Royal',
+    label: 'Royal Wedding Package',
+    tagline: 'Grand & Luxurious',
+    img: '/img4.jpg',
     description:
       'A no-compromise wedding catering experience — multi-cuisine, multi-counter, with five-star presentation.',
     features: [
