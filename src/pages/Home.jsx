@@ -289,11 +289,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── MENU PREVIEW (beige) ──────────────────────────────────── */}
+      {/* ── MENU PREVIEW (beige) ────────────────────────────────────
+          Veg is the featured / primary offering on the homepage; the
+          asymmetric layout, ribbon and pure-veg badge are all driven
+          by the `featured="veg"` prop. Non-Veg stays visible as a
+          complementary secondary card. */}
       <section id="menu-preview" className="section-pad beige-section">
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
           <FadeUp style={{ textAlign: 'center', marginBottom: 56 }}>
-            <p className="section-kicker">Curated Catering Menus</p>
+            <p className="section-kicker">Premium Vegetarian Catering</p>
             <h2 className="section-title" style={{ fontSize: 'clamp(1.9rem, 3.4vw, 2.8rem)', marginTop: 4 }}>
               Our <span style={{
                 background: 'linear-gradient(135deg, #B8923D, #C9A14A, #8B6B2A)',
@@ -302,12 +306,12 @@ export default function Home() {
               }}>Menu</span>
             </h2>
             <Ornament />
-            <p className="section-subtitle" style={{ maxWidth: 640, margin: '14px auto 0', fontSize: '1.1rem' }}>
-              Explore our complete Veg &amp; Non-Veg catering menu for every celebration.
+            <p className="section-subtitle" style={{ maxWidth: 660, margin: '14px auto 0', fontSize: '1.1rem' }}>
+              Specialists in pure vegetarian feasts — with an elegant Non-Veg selection for every celebration.
             </p>
           </FadeUp>
 
-          <MenuChoiceCards />
+          <MenuChoiceCards featured="veg" />
 
           <FadeUp style={{ textAlign: 'center', marginTop: 50 }}>
             <Link to="/menu" className="btn-outline-gold" style={{ textDecoration: 'none' }}>

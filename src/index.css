@@ -748,3 +748,29 @@ body {
 @media (min-width: 769px) {
   .show-mobile { display: none !important; }
 }
+
+
+/* ── MENU CHOICE GRID (Home + /menu hub) ──────────────────────────
+   Two-card layout for the Veg / Non-Veg picker.
+   Default  : equal two-column grid (used on /menu hub).
+   Featured : on tablet+, the featured card takes ~58% width so the
+              primary offering visually leads. On mobile both
+              variants stack — the featured card is first in the
+              source order, so it appears on top. */
+.menu-choice-grid {
+  display: grid;
+  gap: 30px;
+  max-width: 920px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
+}
+.menu-choice-grid--featured {
+  max-width: 1040px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 760px) {
+  .menu-choice-grid--featured {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  }
+}
