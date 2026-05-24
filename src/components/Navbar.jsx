@@ -3,7 +3,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import TopBar from './TopBar';
 import { NAV_LINKS } from '../data/navLinks';
-import { PHONE_PRIMARY } from '../data/constants';
+import { PHONE_PRIMARY, LOGO_SRC } from '../data/constants';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -88,10 +88,11 @@ export default function Navbar() {
             }}
           >
             <img
-              src="/logo.png"
+              src={LOGO_SRC}
               alt="Aadhya Caterers"
+              className="brand-logo"
               style={{
-                height: scrolled ? 50 : 60,
+                height: scrolled ? 56 : 68,
                 width: 'auto',
                 objectFit: 'contain',
                 display: 'block',

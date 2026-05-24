@@ -9,14 +9,15 @@ export const USE_FORMSPREE      = false;
 export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
 
 // ─── CONTACT INFO ────────────────────────────────────────────────────────────
-export const PHONE_PRIMARY   = '9494055353';
+export const PHONE_PRIMARY   = '9090809026';
 export const PHONE_SECONDARY = '9398183197';
 export const EMAIL_PRIMARY   = 'aadhyacaterers01@gmail.com';
 
 const WHATSAPP_MSG = encodeURIComponent(
   'Hi, I want to book catering for my event. Please share details about your packages and availability.'
 );
-export const WHATSAPP_URL = `https://wa.me/91${PHONE_PRIMARY}?text=${WHATSAPP_MSG}`;
+export const WHATSAPP_URL = `https://wa.me/919398183297?text=${WHATSAPP_MSG}`;
+export const LOGO_SRC = `${process.env.PUBLIC_URL}/logo.png`;
 export const YOUTUBE_URL  = 'https://youtube.com/@aadhyacaterers?si=DPTGpWcFBa9mVFtC';
 export const INSTAGRAM_URL = 'https://instagram.com/aadhyacaterers';
 export const FACEBOOK_URL  = 'https://facebook.com/aadhyacaterers';

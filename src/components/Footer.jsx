@@ -4,7 +4,7 @@ import { NAV_LINKS } from '../data/navLinks';
 import { SERVICES } from '../data/services';
 import {
   WHATSAPP_URL, YOUTUBE_URL, INSTAGRAM_URL, FACEBOOK_URL,
-  PHONE_PRIMARY, PHONE_SECONDARY, EMAIL_PRIMARY,
+  PHONE_PRIMARY, PHONE_SECONDARY, EMAIL_PRIMARY, LOGO_SRC,
 } from '../data/constants';
 
 const IconWhatsApp = () => (
@@ -96,8 +96,9 @@ export default function Footer() {
         }}>
           {/* Brand */}
           <div>
-            <img src="/logo.png" alt="Aadhya Caterers" style={{
-              height: 80,
+            <img src={LOGO_SRC} alt="Aadhya Caterers" className="brand-logo" style={{
+              height: 96,
+              width: 'auto',
               marginBottom: 18,
               filter: 'drop-shadow(0 4px 14px rgba(229,199,127,0.30))',
             }} />
