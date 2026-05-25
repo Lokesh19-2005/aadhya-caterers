@@ -226,7 +226,7 @@ export default function Footer() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               <a href={`tel:${PHONE_PRIMARY}`} style={{ color: 'rgba(255,251,242,0.85)', textDecoration: 'none', fontFamily: '"DM Sans"', fontSize: '0.92rem', display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-                <span style={{ color: '#E5C77F' }}>📞</span> +91 94940 55353
+                <span style={{ color: '#E5C77F' }}>📞</span> +91 +91 90908 09026
               </a>
               <a href={`tel:${PHONE_SECONDARY}`} style={{ color: 'rgba(255,251,242,0.85)', textDecoration: 'none', fontFamily: '"DM Sans"', fontSize: '0.92rem', display: 'flex', gap: 10, alignItems: 'flex-start' }}>
                 <span style={{ color: '#E5C77F' }}>📞</span> +91 93981 83197
